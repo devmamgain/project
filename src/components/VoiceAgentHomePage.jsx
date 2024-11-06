@@ -32,7 +32,7 @@ const navigateTo = (path) => {
     <span class="flex justify-center items-center h-3 w-3 relative ">
       <span class="animate-slow-ping absolute inline-flex h-2 w-2 rounded-full bg-[#85e4bf] opacity-75"></span>
       <span class="relative inline-flex rounded-full h-[7px] w-[7px] bg-[#11D17F]"></span>
-    </span> <p>Aiding Businesses In Adopting AI</p></p>
+    </span> <p className="text-gray-100">Aiding Businesses In Adopting AI</p></p>
         <h1 className='md:text-[78px] text-[44px] font-[500] max-w-[673.97px] mt-5 leading-[50px] md:leading-[90px]'>Next-Gen <h1 className='px-[8px] msm1:whitespace-nowrap bg-gradient-to-r from-[#00ffff5e] border-l-4 border-l-[#00FFFF] '>AI Voice Agents</h1></h1>
  
   <div className='flex text-[16px] flex-wrap gap-3 mx-5 msm1:mx-0 justify-center mt-10'>

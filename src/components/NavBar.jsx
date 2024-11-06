@@ -74,7 +74,7 @@ const NavBar = () => {
                 </motion.a>
               )}
               {/* AI Text Chatbots Link */}
-              {lastPart !== "aitextchatbot" && (
+              {lastPart !== "aitextchatbot" && lastPart !== "datascience" && (
                 <motion.a
                   href="/aitextchatbot"
                   className="text-gray-500 whitespace-nowrap hover:text-gray-300 p-2"
@@ -83,7 +83,7 @@ const NavBar = () => {
                 </motion.a>
               )}
               {/* AI Voice Agents Link */}
-              {lastPart !== "aivoiceagent" && lastPart !== "supportpage" && (
+              {lastPart !== "aivoiceagent" && lastPart !== "aitextchatbot" && lastPart !== "dataanalytics" &&  (
                 <motion.a
                   href="/aivoiceagent"
                   className="text-gray-500 whitespace-nowrap hover:text-gray-300 p-2"
@@ -91,8 +91,24 @@ const NavBar = () => {
                   AI Voice Agents
                 </motion.a>
               )}
+               {lastPart !== "datascience"  && lastPart !== "" && lastPart !== "aivoiceagent" && lastPart !== "supportpage" &&   (
+                <motion.a
+                  href="/datascience"
+                  className="text-gray-500 whitespace-nowrap hover:text-gray-300 p-2"
+                >
+                  Data Science
+                </motion.a>
+              )}
+               {lastPart !== "dataanalytics" && lastPart !== "" && lastPart !== "supportpage" &&   (
+                <motion.a
+                  href="/dataanalytics"
+                  className="text-gray-500 whitespace-nowrap hover:text-gray-300 p-2"
+                >
+                  Data Analytics
+                </motion.a>
+              )}
               {/* Contact Us Link */}
-              {lastPart !== "contact" && (
+              {lastPart !== "aivoiceagent" && lastPart !== "aitextchatbot" && lastPart !== "supportpage" && lastPart !== "datascience" && lastPart !== "dataanalytics" && (
                 <motion.a
                   href="#contact-us"
                   className="text-gray-500 flex items-center gap-2 whitespace-nowrap hover:text-gray-300 p-2"
@@ -117,7 +133,7 @@ const NavBar = () => {
           <div className="flex h-full w-full items-center justify-center rounded-3xl">
             <nav className="flex msm1:text-base text-xs msm2:text-sm divide-x divide-[#141E20]">
               {/* Home Link */}
-              {lastPart !== "" && (
+              {lastPart !== "" &&   (
                 <motion.a
                   whileHover={{
                     marginLeft: "20px",
@@ -127,13 +143,13 @@ const NavBar = () => {
                     }
                   }}
                   href="/"
-                  className="text-gray-500 whitespace-nowrap hover:text-gray-300 md:px-[60px] md:py-[20px] sm1:px-[30px] sm1:py-[16px] px-[10px] py-[10px]"
+                  className="text-gray-300 whitespace-nowrap hover:text-gray-100 md:px-[60px] md:py-[20px] sm1:px-[30px] sm1:py-[16px] px-[10px] py-[10px]"
                 >
                   Home
                 </motion.a>
               )}
               {/* AI Text Chatbots Link */}
-              {lastPart !== "aitextchatbot" && (
+              {lastPart !== "aitextchatbot" && lastPart !== "datascience" &&(
                 <motion.a
                   whileHover={{
                     marginLeft: "10px",
@@ -144,13 +160,13 @@ const NavBar = () => {
                     }
                   }}
                   href="/aitextchatbot"
-                  className="text-gray-500 whitespace-nowrap hover:text-gray-300 md:px-[60px] md:py-[20px] sm1:px-[30px] sm1:py-[16px] px-[10px] py-[10px]"
+                  className="text-gray-300 whitespace-nowrap hover:text-gray-100 md:px-[60px] md:py-[20px] sm1:px-[30px] sm1:py-[16px] px-[10px] py-[10px]"
                 >
                   AI Text Chatbots
                 </motion.a>
               )}
               {/* AI Voice Agents Link */}
-              {lastPart !== "aivoiceagent" && lastPart !== "supportpage" && (
+              {lastPart !== "aivoiceagent" && lastPart !== "aitextchatbot" && lastPart !== "dataanalytics" &&  (
                 <motion.a
                   whileHover={{
                     marginLeft: "10px",
@@ -161,13 +177,47 @@ const NavBar = () => {
                     }
                   }}
                   href="/aivoiceagent"
-                  className="text-gray-500 whitespace-nowrap hover:text-gray-300 md:px-[60px] md:py-[20px] sm1:px-[30px] sm1:py-[16px] px-[10px] py-[10px]"
+                  className="text-gray-300 whitespace-nowrap hover:text-gray-100 md:px-[60px] md:py-[20px] sm1:px-[30px] sm1:py-[16px] px-[10px] py-[10px]"
                 >
                   AI Voice Agents
                 </motion.a>
               )}
+
+{lastPart !== "datascience"  && lastPart !== "" && lastPart !== "aivoiceagent" && lastPart !== "supportpage" && (
+                <motion.a
+                  whileHover={{
+                    marginLeft: "10px",
+                    marginRight: "10px",
+                    opacity: 0.8,
+                    transition: {
+                      duration: 0.3
+                    }
+                  }}
+                  href="/datascience"
+                  className="text-gray-300 whitespace-nowrap hover:text-gray-100 md:px-[60px] md:py-[20px] sm1:px-[30px] sm1:py-[16px] px-[10px] py-[10px]"
+                >
+                  Data Science
+                </motion.a>
+              )}
+
+{ lastPart !== "dataanalytics" && lastPart !== "" && lastPart !== "supportpage" && (
+                <motion.a
+                  whileHover={{
+                    marginLeft: "10px",
+                    marginRight: "10px",
+                    opacity: 0.8,
+                    transition: {
+                      duration: 0.3
+                    }
+                  }}
+                  href="/dataanalytics"
+                  className="text-gray-300 whitespace-nowrap hover:text-gray-100 md:px-[60px] md:py-[20px] sm1:px-[30px] sm1:py-[16px] px-[10px] py-[10px]"
+                >
+                  Data Analytics
+                </motion.a>
+              )}
               {/* Contact Us Link */}
-              {lastPart !== "contact" && (
+              {lastPart !== "aivoiceagent" && lastPart !== "aitextchatbot" && lastPart !== "supportpage" && lastPart !== "datascience" && lastPart !== "dataanalytics" && (
                 <motion.a
                   whileHover={{
                     marginRight: "10px",
@@ -177,7 +227,7 @@ const NavBar = () => {
                     }
                   }}
                   href="#contact-us"
-                  className="text-gray-500 flex items-center gap-2 whitespace-nowrap hover:text-gray-300 md:px-[60px] md:py-[20px] sm1:px-[30px] sm1:py-[16px] px-[10px] py-[10px]"
+                  className="text-gray-300 flex items-center gap-2 whitespace-nowrap hover:text-white md:px-[60px] md:py-[20px] sm1:px-[30px] sm1:py-[16px] px-[10px] py-[10px]"
                 >
                   <span class="flex justify-center items-center h-3 w-3 relative ">
   <span class="animate-slow-ping absolute inline-flex h-2 w-2 rounded-full bg-[#85e4bf] opacity-75"></span>

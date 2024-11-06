@@ -1,9 +1,9 @@
 import { motion, useAnimation, useInView } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
 import React from 'react';
-import logo from "../assets/Logo.png"
+import logo from "../../assets/Logo.png"
 
-const ChatbotHomePage = () => {
+const DataAnalyticsHome = () => {
   const containRef = useRef(null)
   const isInView = useInView(containRef)
   const maincontrol = useAnimation()
@@ -31,7 +31,7 @@ const navigateTo = (path) => {
       <span class="animate-slow-ping absolute inline-flex h-2 w-2 rounded-full bg-[#85e4bf] opacity-75"></span>
       <span class="relative inline-flex rounded-full h-[7px] w-[7px] bg-[#11D17F]"></span>
     </span> <p className="text-gray-100">Aiding Businesses In Adopting AI</p></p>
-        <h1 className='md:text-[78px] text-[44px] font-[500] max-w-[673.97px] mt-5 leading-[50px] md:leading-[90px] msm1:px-0 px-5'>Next-Gen <h1 className='px-[8px] msm1:whitespace-nowrap bg-gradient-to-r from-[#00ffff5e] border-l-4 border-l-[#00FFFF] '>AI Text Chatbots</h1></h1>
+        <h1 className='md:text-[78px] text-[44px] font-[500] max-w-[673.97px] mt-5 leading-[50px] md:leading-[90px] msm1:px-0 px-5 '>Fresh Data Analytic<h1 className='px-[8px] msm1:whitespace-nowrap bg-gradient-to-r from-[#00ffff5e] border-l-4 border-l-[#00FFFF] '>AI Solutions</h1></h1>
  
   <div className='flex text-[16px] flex-wrap gap-3 mx-5 msm1:mx-0 justify-center mt-10 '>
   <motion.button 
@@ -52,8 +52,17 @@ const navigateTo = (path) => {
         opacity:0.8,
             transition: { duration: 0.3 }
           }} 
-    onClick={() => navigateTo('#chatbotpricing')}
+    onClick={() => navigateTo('#aboutservice')}
+    className='bg-[#284743] text-textmain-color px-[32px] py-[20px] rounded-full  flex-grow msm1:flex-grow-0 text-left font-[500]' >About This Service</motion.button>
+   <motion.button 
+      whileHover={{
+        scaleX: 1.08,
+        opacity:0.8,
+            transition: { duration: 0.3 }
+          }} 
+    onClick={() => navigateTo('#pricing')}
     className='bg-[#284743] text-textmain-color px-[32px] py-[20px] rounded-full  flex-grow msm1:flex-grow-0 text-left font-[500]' >Discover Pricing</motion.button>
+  
   </div>
   </div>
   </div>
@@ -61,4 +70,4 @@ const navigateTo = (path) => {
     );
 };
 
-export default ChatbotHomePage;
+export default DataAnalyticsHome;

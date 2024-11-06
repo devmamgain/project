@@ -8,6 +8,8 @@ import Footer from './components/Footer';
 const FinalPage = lazy(() => import('./components/FinalPage'));
 const FinalChatbotPage = lazy(() => import('./components/FinalChatbotPage'));
 const FinalVoiceAgentPage = lazy(() => import('./components/FinalVoiceAgentPage'));
+const FinalDataScience = lazy(() => import('./components/DataScience/FinalDataScience'));
+const FinalDataAnalytics = lazy(() => import('./components/DataAnalytics/FinalDataAnalytics'));
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -37,6 +39,8 @@ function App() {
           <Route path="/aitextchatbot" element={<FinalChatbotPage />} />
           <Route path="/aivoiceagent" element={<FinalVoiceAgentPage />} />
           <Route path="/supportpage" element={<FinalSupportPage />} />
+          <Route path="/datascience" element={<FinalDataScience />} />
+          <Route path="/dataanalytics" element={<FinalDataAnalytics />} />
 
         </Routes>
       </Suspense>

@@ -3,6 +3,9 @@ import { useEffect, useRef, useState } from "react";
 import chatting from "../assets/chatting.webp"
 import voiceagent from "../assets/voiceagent.webp"
 import support from "../assets/support.webp"
+import dataanalytics from "../assets/dataanalytics.webp"
+import LookerConsulting from "../assets/LookerConsulting.webp"
+import datascience from "../assets/datascience.webp"
 
 const OurServices = () => {
 
@@ -94,7 +97,7 @@ initial="hidden"
           initial="hidden"
       className="flex justify-between flex-wrap gap-2">
       <h1 className="font-[500] text-[#EAE7DC] text-[28px]">Available Services</h1>
-      <h1 className="rounded-3xl  bg-[#E7FAF2] text-[#22A16B] font-[500] px-4 py-2 w-[110px] text-center">3 services</h1>
+      <h1 className="rounded-3xl  bg-[#E7FAF2] text-[#22A16B] font-[500] px-4 py-2 w-[110px] text-center">5 services</h1>
       </motion.div>
 <motion.div 
     ref={inboundRef}
@@ -148,6 +151,52 @@ Utilize our tested AI Chatbots for your website or social media.
           Get Started
           </button>
         </div>
+</div>
+      <div className="relative rounded-2xl shadow-lg overflow-hidden min-w-[220.8px] mt-3">              
+
+<motion.img 
+whileHover={{
+  scale: 1.08,
+      transition: { duration: 0.2 }
+    }} 
+    onClick={() => navigateTo('dataanalytics')}
+
+src={dataanalytics}
+className=" cursor-pointer rounded-2xl object-cover  h-[558.4px] flex-grow flex w-full"
+
+/>
+<div className="absolute inset-0 bg-gradient-to-tr from-black via-black/30 to-transparent flex flex-col p-6 z-10 pointer-events-none">
+<h3 className="text-[22px] font-[500] mb-3 mt-auto">Data Analytics</h3>
+<p className="text-[#FBFBFB99] mb-5 font-[500] max-w-[320px] text-[18px]">
+We offers data analytics and visualization services.
+   </p>
+          <button className="text-[#EAE7DC] py-2 text-left font-[500]">
+          Get Started
+          </button>
+        </div>
+</div>
+<div className="relative rounded-2xl shadow-lg overflow-hidden min-w-[220.8px] mt-3">              
+
+<motion.img 
+whileHover={{
+  scale: 1.08,
+      transition: { duration: 0.2 }
+    }} 
+    onClick={() => navigateTo('datascience')}
+
+src={datascience}
+className=" cursor-pointer rounded-2xl object-cover  h-[558.4px] flex-grow flex w-full"
+
+/>
+<div className="absolute inset-0 bg-gradient-to-tr from-black via-black/30 to-transparent flex flex-col p-6 z-10 pointer-events-none">
+  <h3 className="text-[22px] font-[500] mb-3 mt-auto">Data Science</h3>
+  <p className="text-[#FBFBFB99] mb-5 font-[500] max-w-[320px] text-[18px]">
+    We offer data science solutions to drive data-driven insights and innovation.
+  </p>
+  <button className="text-[#EAE7DC] py-2 text-left font-[500]">
+    Get Started
+  </button>
+</div>
 </div>
 <div className="relative rounded-2xl shadow-lg overflow-hidden md:col-span-2">              
 
